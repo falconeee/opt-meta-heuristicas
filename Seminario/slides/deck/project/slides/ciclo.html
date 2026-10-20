@@ -1,0 +1,32 @@
+<section id="ciclo" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">O ciclo da Evolução Diferencial</h2>
+</div>
+<div style="position:absolute; left:128px; top:380px; width:340px; height:200px; display:flex; flex-direction:column; justify-content:center; gap:12px; background:#13233F; border-radius:16px; padding:32px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#FAFAF7">Inicialização</h3>
+<p style="font-size:24px; line-height:1.4; color:#BFD0E6">NP vetores sorteados no domínio</p>
+</div>
+<div style="position:absolute; left:569px; top:380px; width:340px; height:200px; display:flex; flex-direction:column; justify-content:center; gap:12px; background:#EEF2F8; border:3px solid #2A78D6; border-radius:16px; padding:32px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Mutação</h3>
+<p style="font-size:24px; line-height:1.4">base + F · diferença entre dois vetores</p>
+</div>
+<div style="position:absolute; left:1010px; top:380px; width:340px; height:200px; display:flex; flex-direction:column; justify-content:center; gap:12px; background:#EEF2F8; border:3px solid #2A78D6; border-radius:16px; padding:32px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Cruzamento</h3>
+<p style="font-size:24px; line-height:1.4">mistura o mutante com o alvo</p>
+</div>
+<div style="position:absolute; left:1452px; top:380px; width:340px; height:200px; display:flex; flex-direction:column; justify-content:center; gap:12px; background:#EEF2F8; border:3px solid #2A78D6; border-radius:16px; padding:32px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Seleção</h3>
+<p style="font-size:24px; line-height:1.4">fica o melhor entre alvo e experimental</p>
+</div>
+<x-connector x1="468" y1="480" x2="569" y2="480" head="end" route="straight" style="color:#13233F; border-width:4px"></x-connector>
+<x-connector x1="909" y1="480" x2="1010" y2="480" head="end" route="straight" style="color:#13233F; border-width:4px"></x-connector>
+<x-connector x1="1350" y1="480" x2="1452" y2="480" head="end" route="straight" style="color:#13233F; border-width:4px"></x-connector>
+<div style="position:absolute; left:737px; top:580px; width:887px; height:100px; border:4px solid #2A78D6; border-top:none; border-radius:0px 0px 24px 24px"></div>
+<x-shape kind="arrow-up" style="position:absolute; left:723px; top:584px; width:32px; height:44px; background:#2A78D6"></x-shape>
+<p style="position:absolute; left:737px; top:700px; width:887px; font-size:24px; font-weight:600; text-align:center; color:#1C5CAB">próxima geração: G ← G + 1</p>
+<p style="position:absolute; left:128px; top:790px; width:1664px; font-size:32px; line-height:1.4; color:#13233F">O ciclo se repete até o critério de parada: número máximo de gerações ou valor-alvo de f.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Uma introdução à Evolução Diferencial</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">7</p>
+<aside>Visão geral antes dos detalhes. A população inicial é sorteada uma única vez. A cada geração, cada indivíduo da população faz o papel de vetor-alvo e passa pelos três operadores: mutação, cruzamento e seleção. Ao final da geração, a nova população substitui a anterior e o ciclo recomeça.</aside>
+</section>

@@ -1,0 +1,21 @@
+<section id="motivacao" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Introdução</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Por que a otimização global é difícil</h2>
+</div>
+<div style="display:flex; gap:64px; align-items:center">
+<div style="flex:1; display:flex; flex-direction:column; gap:32px">
+<p style="font-size:32px; line-height:1.4"><b>Objetivo:</b> minimizar uma função f de D variáveis contínuas.</p>
+<p style="font-size:32px; line-height:1.4">Muitas funções reais são <b>não lineares, não diferenciáveis e multimodais</b>.</p>
+<p style="font-size:32px; line-height:1.4">Gradiente e buscas locais (Nelder–Mead) só aceitam passos que melhoram: <b>param no primeiro mínimo local</b>.</p>
+<p style="font-size:32px; line-height:1.4">Meta-heurísticas populacionais mantêm <b>várias soluções</b> ao mesmo tempo e escapam desses mínimos.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; align-items:center">
+<img src="/_blob/efd0d9d7dc12a2402509fe3fec5d12de" alt="Função de Rastrigin em duas dimensões: superfície 3D e curvas de nível com muitos mínimos locais" style="width:860px; height:415px; object-fit:contain">
+<p style="font-size:24px; color:#5E6878">Rastrigin 2D: 121 mínimos locais e um único mínimo global</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Fonte: Storn e Price (1997)</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">3</p>
+<aside>O problema geral: minimizar uma função de custo com variáveis contínuas. Quando a função tem muitos mínimos locais, métodos gulosos, que só aceitam melhoras, ficam presos. A figura mostra a função de Rastrigin, que vamos usar no exemplo: cada vale é um mínimo local. A ideia das meta-heurísticas populacionais é manter várias soluções, de modo que umas ajudem as outras a escapar.</aside>
+</section>

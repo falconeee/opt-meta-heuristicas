@@ -1,0 +1,26 @@
+<section id="div-int" data-transition="fade" style="background:#EEF2F8; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Diversificação e intensificação</h2>
+</div>
+<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:32px">
+<div style="display:flex; flex-direction:column; gap:16px; background:#FAFAF7; border-top:8px solid #EB6834; border-radius:16px; padding:40px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#B34A1C">No início</p>
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Diversificação</h3>
+<p style="font-size:32px; line-height:1.4">Diferenças longas → saltos grandes</p>
+<p style="font-size:32px; line-height:1.4">Base aleatória: sem viés para o melhor</p>
+<p style="font-size:32px; line-height:1.4">Seleção 1 a 1 mantém NP linhagens</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:16px; background:#FAFAF7; border-top:8px solid #2A78D6; border-radius:16px; padding:40px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Com as gerações</p>
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Intensificação</h3>
+<p style="font-size:32px; line-height:1.4">Seleção gulosa descarta as piores</p>
+<p style="font-size:32px; line-height:1.4">População se concentra nas bacias boas</p>
+<p style="font-size:32px; line-height:1.4">Diferenças curtas → passos pequenos</p>
+</div>
+</div>
+<p style="font-size:32px; line-height:1.4; color:#13233F"><b>O passo se ajusta sozinho.</b> Em regiões planas ocorre o inverso: as diferenças crescem e a busca acelera.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Storn e Price (1997), Seção 5</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">15</p>
+<aside>É aqui que respondemos à pergunta do enunciado sobre diversificação e intensificação. Não há um parâmetro separado para cada uma: o equilíbrio sai da estrutura do algoritmo. No começo, a população está espalhada, as diferenças são longas e a busca explora. Conforme a seleção elimina as soluções ruins, a população se concentra, as diferenças encolhem e a busca refina. Storn e Price chamam de propriedade de divergência o efeito inverso em regiões planas. F regula o tamanho dos passos, CR quantas coordenadas mudam e NP quanta diversidade se mantém.</aside>
+</section>

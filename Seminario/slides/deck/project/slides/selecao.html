@@ -1,0 +1,26 @@
+<section id="selecao" data-transition="fade" style="background:#EEF2F8; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição · Operador 3</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Seleção gulosa, um contra um</h2>
+</div>
+<div style="display:flex; justify-content:center; background:#FAFAF7; border:1px solid #D5DCE6; border-radius:16px; padding:32px">
+<img src="/_blob/2d8fd006eff76db28382c9fb55b227ed" alt="x i G+1 igual a u i G+1 se f de u for menor que f de x i G; caso contrário, x i G" style="width:800px; height:146px; object-fit:contain">
+</div>
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px; background:#FAFAF7; border:1px solid #D5DCE6; border-radius:16px; padding:40px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Um contra um</h3>
+<p style="font-size:32px; line-height:1.4">Cada u compete só com o seu próprio alvo: NP disputas por geração.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FAFAF7; border:1px solid #D5DCE6; border-radius:16px; padding:40px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Gulosa</h3>
+<p style="font-size:32px; line-height:1.4">u só entra se for melhor; o f de cada posição nunca piora.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:12px; background:#FAFAF7; border:1px solid #D5DCE6; border-radius:16px; padding:40px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Preserva diversidade</h3>
+<p style="font-size:32px; line-height:1.4">Cada posição é uma linhagem; ninguém domina a população de uma vez.</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Storn e Price (1997), Seção 2</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">11</p>
+<aside>A seleção é a mais simples possível: o vetor experimental disputa a vaga apenas com o seu alvo. Se tiver custo menor, ocupa a vaga na próxima geração; senão, o alvo permanece. Consequências: o valor de f em cada posição nunca piora, e, como não há seleção por ranking da população inteira, um indivíduo muito bom não substitui todos os outros de uma vez, o que ajuda a manter a diversidade. Muitas implementações aceitam também empates (menor ou igual), para a população conseguir andar em platôs.</aside>
+</section>

@@ -1,0 +1,32 @@
+<section id="representacao" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">População e inicialização</h2>
+</div>
+<div style="display:flex; gap:64px; align-items:start">
+<div style="flex:1; display:flex; flex-direction:column; gap:32px">
+<p style="font-size:32px; line-height:1.4">Cada solução candidata é um <b>vetor de D números reais</b>.</p>
+<p style="font-size:32px; line-height:1.4">A população tem <b>NP vetores</b>, e esse tamanho não muda durante a execução.</p>
+<p style="font-size:32px; line-height:1.4">Na geração 0, cada coordenada é sorteada <b>uniformemente</b> dentro dos limites:</p>
+<img src="/_blob/e2a85e5bdbf5e97a7c47595177561a9c" alt="x j i 0 igual a x j mínimo mais rand j entre 0 e 1 vezes x j máximo menos x j mínimo" style="width:770px; height:69px; object-fit:contain">
+</div>
+<div style="width:620px; display:flex; flex-direction:column; gap:24px; background:#EEF2F8; border-radius:16px; padding:40px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Vocabulário</h3>
+<div style="display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; font-weight:600; color:#13233F">Vetor-alvo</p>
+<p style="font-size:24px; line-height:1.4">o indivíduo i que está sendo renovado</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; font-weight:600; color:#13233F">Vetor mutante (v)</p>
+<p style="font-size:24px; line-height:1.4">criado pela mutação a partir de outros três vetores</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:4px">
+<p style="font-size:32px; font-weight:600; color:#13233F">Vetor experimental (u)</p>
+<p style="font-size:24px; line-height:1.4">resultado do cruzamento entre v e o alvo (<i>trial vector</i>)</p>
+</div>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Uma introdução à Evolução Diferencial</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">8</p>
+<aside>A representação é direta: um vetor de números reais, sem codificação binária como nos algoritmos genéticos clássicos. A população inicial deve cobrir todo o domínio, por isso é sorteada com distribuição uniforme. Se já houver uma solução preliminar, o artigo sugere sortear a população em torno dela, com desvios normais. Fixar o vocabulário ajuda nos próximos slides: alvo, mutante e experimental.</aside>
+</section>

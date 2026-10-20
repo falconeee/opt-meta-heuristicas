@@ -1,0 +1,25 @@
+<section id="pot-lim" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Conclusões</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Potencialidades e limitações</h2>
+</div>
+<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:32px">
+<div style="display:flex; flex-direction:column; gap:20px; background:#EEF2F8; border-top:8px solid #2A78D6; border-radius:16px; padding:40px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Potencialidades</h3>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Simples: poucas linhas de código e três parâmetros</p></div>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Dispensa derivadas e lida bem com multimodalidade</p></div>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Paralelizável: os NP vetores são independentes</p></div>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Passo ajustado pelos próprios vetores diferença</p></div>
+</div>
+<div style="display:flex; flex-direction:column; gap:20px; background:#EEF2F8; border-top:8px solid #EB6834; border-radius:16px; padding:40px">
+<h3 style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">Limitações</h3>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Warning" style="color:#B34A1C; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Sensível a F, CR e à estratégia de mutação</p></div>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Warning" style="color:#B34A1C; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Pode estagnar ou convergir prematuramente</p></div>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Warning" style="color:#B34A1C; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Discretos e com restrições exigem adaptações</p></div>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Warning" style="color:#B34A1C; width:36px; height:36px"></x-icon><p style="flex:1; font-size:32px; line-height:1.4">Sem garantia de ótimo global (no free lunch)</p></div>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Fontes: Storn e Price (1997); Das e Suganthan (2011); Wolpert e Macready (1997)</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">22</p>
+<aside>Potencialidades: o núcleo é curto, só há três parâmetros com boas regras práticas, não precisa de gradiente e os NP vetores de uma geração podem ser avaliados em paralelo. A característica mais marcante é o passo auto-ajustável. Limitações: o desempenho depende de F, CR e da estratégia, o que motivou as variantes adaptativas; a população pode estagnar, principalmente se for pequena ou se a variante for gulosa, como a DE/best; problemas discretos ou com restrições exigem adaptações, como arredondamento ou penalidades; o custo cresce com a dimensão; e, pelo teorema no free lunch, nenhum método vence todos os outros em todos os problemas.</aside>
+</section>

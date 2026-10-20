@@ -1,0 +1,32 @@
+<section id="parametros" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Só três parâmetros de controle</h2>
+</div>
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:32px">
+<div style="display:flex; flex-direction:column; gap:16px; background:#EEF2F8; border-radius:16px; padding:40px">
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; font-style:italic; line-height:1; color:#13233F">NP</p>
+<p style="font-size:24px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:#1C5CAB">Tamanho da população</p>
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">5D a 10D</p>
+<p style="font-size:24px; line-height:1.4">No mínimo 4. Mais vetores trazem mais diversidade, mas custam mais avaliações.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:16px; background:#EEF2F8; border-radius:16px; padding:40px">
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; font-style:italic; line-height:1; color:#13233F">F</p>
+<p style="font-size:24px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:#1C5CAB">Fator de escala</p>
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">0,5</p>
+<p style="font-size:24px; line-height:1.4">Bom ponto de partida. Valores abaixo de 0,4 ou acima de 1 raramente funcionam bem.</p>
+</div>
+<div style="display:flex; flex-direction:column; gap:16px; background:#EEF2F8; border-radius:16px; padding:40px">
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; font-style:italic; line-height:1; color:#13233F">CR</p>
+<p style="font-size:24px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:#1C5CAB">Constante de cruzamento</p>
+<p style="font-family:'Source Serif 4', Georgia, serif; font-size:40px; font-weight:600; color:#13233F">0,1 ou 0,9</p>
+<p style="font-size:24px; line-height:1.4">0,1 é a escolha segura; 0,9 a 1,0 testa se há convergência rápida. CR baixo favorece funções separáveis.</p>
+</div>
+</div>
+<div style="background:#13233F; border-radius:16px; padding:32px 40px">
+<p style="font-size:32px; line-height:1.4; color:#FAFAF7">A população convergiu cedo demais? <b>Aumente F e/ou NP.</b></p>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Fonte: Storn e Price (1997), Seção 4</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">14</p>
+<aside>Estas são as regras práticas da Seção 4 do artigo. NP entre 5 e 10 vezes a dimensão, com mínimo de 4 para haver três vetores distintos do alvo. F = 0,5 é um bom começo. Para CR, 0,1 é seguro, mas vale testar 0,9 ou 1,0 para ver se a convergência rápida funciona. Um CR baixo muda poucas coordenadas por vez, o que funciona bem quando as variáveis não interagem (funções separáveis). No nosso exemplo usamos NP = 20, F = 0,5 e CR = 0,9.</aside>
+</section>
