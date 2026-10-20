@@ -1,0 +1,22 @@
+<section id="pseudocodigo" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Algoritmo DE/rand/1/bin</h2>
+</div>
+<div style="display:flex; flex-direction:column; gap:4px; background:#13233F; border-radius:16px; padding:40px 48px; font-family:'IBM Plex Mono', 'Courier New', monospace; color:#E8EDF5">
+<p style="font-size:28px; line-height:1.5; white-space:nowrap">sortear NP vetores x[i] uniformemente no domínio e avaliar f(x[i])</p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap"><b><span style="color:#9FC3F0">para</span></b> G = 0, 1, …, G_max − 1:</p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 56px"><b><span style="color:#9FC3F0">para</span></b> i = 1, …, NP:</p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 112px">sortear r1 ≠ r2 ≠ r3 ≠ i  e  j_rand ∈ {1, …, D}</p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 112px">v ← x[r1] + F·(x[r2] − x[r3])&#160;&#160;&#160;<span style="color:#F08A5D"># mutação</span></p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 112px"><b><span style="color:#9FC3F0">para</span></b> j = 1, …, D:</p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 168px">u[j] ← v[j] <b><span style="color:#9FC3F0">se</span></b> rand_j ≤ CR <b><span style="color:#9FC3F0">ou</span></b> j = j_rand, <b><span style="color:#9FC3F0">senão</span></b> x[i][j]&#160;&#160;&#160;<span style="color:#F08A5D"># cruzamento</span></p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 112px">novo[i] ← u <b><span style="color:#9FC3F0">se</span></b> f(u) &lt; f(x[i]), <b><span style="color:#9FC3F0">senão</span></b> x[i]&#160;&#160;&#160;<span style="color:#F08A5D"># seleção</span></p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap; padding:0px 0px 0px 56px">x ← novo&#160;&#160;&#160;<span style="color:#F08A5D"># próxima geração</span></p>
+<p style="font-size:28px; line-height:1.5; white-space:nowrap"><b><span style="color:#9FC3F0">retornar</span></b> o melhor vetor de x</p>
+</div>
+<p style="font-size:24px; line-height:1.4">Como no pseudocódigo original (Fig. 3 do artigo), a nova população é montada à parte e só substitui a atual ao final da geração.</p>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Adaptado de Storn e Price (1997), Fig. 3</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">12</p>
+<aside>Juntando os três operadores. São dois laços: gerações e indivíduos. Para cada indivíduo: sorteia índices, faz a mutação, o cruzamento e a seleção. O artigo original diz que o núcleo da ED cabe em menos de 30 linhas de C. Note que a seleção grava em um vetor separado, novo, e a troca acontece no fim da geração: é a versão geracional do artigo. Algumas bibliotecas substituem imediatamente, o que muda um pouco a dinâmica.</aside>
+</section>

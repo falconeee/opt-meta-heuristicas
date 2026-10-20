@@ -1,0 +1,20 @@
+<section id="cruzamento" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição · Operador 2</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Cruzamento binomial: misturar mutante e alvo</h2>
+</div>
+<div style="display:flex; gap:64px; align-items:center">
+<div style="width:800px; display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; justify-content:center; background:#EEF2F8; border-radius:16px; padding:32px">
+<img src="/_blob/192e40831016855589ae7f3ace9756a4" alt="u j i G+1 igual a v j i G+1 se rand j menor ou igual a CR ou j igual a j rand; caso contrário, x j i G" style="width:720px; height:112px; object-fit:contain">
+</div>
+<p style="font-size:32px; line-height:1.4"><b>CR</b> ∈ [0, 1]: probabilidade de cada coordenada vir do mutante.</p>
+<p style="font-size:32px; line-height:1.4"><b>j_rand</b> garante que ao menos uma coordenada venha de v.</p>
+<p style="font-size:32px; line-height:1.4">O número de coordenadas herdadas é quase binomial: daí o “bin”.</p>
+</div>
+<img src="/_blob/7cabc5c5bb8cd9076b8b77ab6bac7ce5" alt="Exemplo com D = 7 e CR = 0,4: rand j vale 0,31 na posição 2 e 0,12 na posição 5, e j rand = 4; o vetor experimental recebe v2, v4 e v5 do mutante e as demais coordenadas do alvo" style="width:800px; height:344px; object-fit:contain">
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Storn e Price (1997), Eq. 4 e Fig. 2</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">10</p>
+<aside>O cruzamento decide, coordenada a coordenada, se o vetor experimental herda o valor do mutante ou do alvo. Para cada j, sorteamos um número entre 0 e 1: se ele for menor ou igual a CR, a coordenada vem do mutante. O índice j_rand é sorteado uma vez e sempre vem do mutante, para que u nunca seja uma cópia do alvo. No exemplo, com CR = 0,4, só as posições 2 e 5 passaram no teste, e a posição 4 veio por ser o j_rand. A alternativa é o cruzamento exponencial, que copia um bloco contíguo de coordenadas.</aside>
+</section>

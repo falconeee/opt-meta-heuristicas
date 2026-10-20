@@ -1,0 +1,32 @@
+<section id="variantes" data-transition="fade" style="background:#EEF2F8; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Variantes: a notação DE/x/y/z</h2>
+</div>
+<p style="font-size:32px; line-height:1.4"><b>x</b> = vetor-base (rand ou best) · <b>y</b> = número de vetores diferença · <b>z</b> = cruzamento (bin ou exp)</p>
+<div style="display:flex; flex-direction:column">
+<div style="display:grid; grid-template-columns:380px 740px 1fr; gap:32px; align-items:center; padding:20px 0px; border-top:2px solid #13233F">
+<p style="font-size:32px; font-weight:600; color:#13233F">DE/rand/1</p>
+<img src="/_blob/bc78cc797ba3b06df6f4164c240bad14" alt="v igual a x r1 mais F vezes x r2 menos x r3" style="width:451px; height:58px; object-fit:contain">
+<p style="font-size:24px; line-height:1.4">Base aleatória: mais exploração (a clássica, usada aqui)</p>
+</div>
+<div style="display:grid; grid-template-columns:380px 740px 1fr; gap:32px; align-items:center; padding:20px 0px; border-top:1px solid #C9D3E0">
+<p style="font-size:32px; font-weight:600; color:#13233F">DE/best/1</p>
+<img src="/_blob/d39c533dde1780bd2d8eee4d03873098" alt="v igual a x best mais F vezes x r1 menos x r2" style="width:475px; height:58px; object-fit:contain">
+<p style="font-size:24px; line-height:1.4">Base = melhor vetor: mais rápida, com risco de convergência prematura</p>
+</div>
+<div style="display:grid; grid-template-columns:380px 740px 1fr; gap:32px; align-items:center; padding:20px 0px; border-top:1px solid #C9D3E0">
+<p style="font-size:32px; font-weight:600; color:#13233F">DE/best/2</p>
+<img src="/_blob/b0a79cc87551ba42589d19ec852e901e" alt="v igual a x best mais F vezes x r1 mais x r2 menos x r3 menos x r4" style="width:696px; height:58px; object-fit:contain">
+<p style="font-size:24px; line-height:1.4">Duas diferenças: mais diversidade quando NP é grande</p>
+</div>
+<div style="display:grid; grid-template-columns:380px 740px 1fr; gap:32px; align-items:center; padding:20px 0px; border-top:1px solid #C9D3E0">
+<p style="font-size:32px; font-weight:600; color:#13233F">DE/current-to-best/1</p>
+<img src="/_blob/c40b75d8d4cfca48f83a5d8ef8e5b804" alt="v igual a x i mais F vezes x best menos x i mais F vezes x r1 menos x r2" style="width:733px; height:58px; object-fit:contain">
+<p style="font-size:24px; line-height:1.4">Parte do alvo e o puxa em direção ao melhor</p>
+</div>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Fontes: Storn e Price (1997); Das e Suganthan (2011)</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">13</p>
+<aside>Storn e Price propuseram essa notação para classificar as variantes. O que vimos até aqui é o DE/rand/1/bin, usado em todas as comparações do artigo. O próprio artigo destaca o DE/best/2/bin: duas diferenças aumentam a diversidade se a população for grande. As variantes que usam o melhor vetor como base convergem mais rápido, mas correm mais risco de convergir cedo demais em funções multimodais. O current-to-best é a base do JADE e do SHADE, que vimos no histórico.</aside>
+</section>

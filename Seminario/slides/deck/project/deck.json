@@ -1,0 +1,27 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-09-28T00:23:00Z"},
+  "title": "Uma introdução à Evolução Diferencial",
+  "cover": "capa",
+  "order": [
+    "capa", "roteiro",
+    "motivacao", "requisitos", "historico", "aplicacoes",
+    "ciclo", "representacao", "mutacao", "cruzamento", "selecao", "pseudocodigo",
+    "variantes", "parametros", "div-int", "exemplo",
+    "rastrigin", "implementacao", "populacao", "animacao", "resultados",
+    "pot-lim", "mensagem", "referencias", "perguntas"
+  ],
+  "sections": {
+    "abertura": {"description": "Título e roteiro do seminário", "start": "capa"},
+    "introducao": {"description": "Motivação, histórico, estado da arte e aplicações da Evolução Diferencial", "start": "motivacao"},
+    "definicao": {"description": "O algoritmo DE/rand/1/bin: operadores, pseudocódigo, variantes, parâmetros e um exemplo numérico", "start": "ciclo"},
+    "aplicacao": {"description": "A ED minimizando a função de Rastrigin 2D com o pymoo", "start": "rastrigin"},
+    "conclusoes": {"description": "Potencialidades, limitações e referências", "start": "pot-lim"}
+  },
+  "faces": {
+    "source-serif-4": {"family": "Source Serif 4", "href": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400..700&display=swap"},
+    "ibm-plex-sans": {"family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"},
+    "ibm-plex-mono": {"family": "IBM Plex Mono", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"}
+  },
+  "designSystems": []
+}

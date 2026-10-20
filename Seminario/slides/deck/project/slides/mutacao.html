@@ -1,0 +1,20 @@
+<section id="mutacao" data-transition="fade" style="background:#FAFAF7; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Definição · Operador 1</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Mutação: somar uma diferença ponderada</h2>
+</div>
+<div style="display:flex; gap:64px; align-items:center">
+<div style="flex:1; display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; justify-content:center; background:#EEF2F8; border-radius:16px; padding:40px">
+<img src="/_blob/a3e8451e4eee4095914d865dec4ae24b" alt="v i G+1 igual a x r1 G mais F vezes x r2 G menos x r3 G" style="width:658px; height:60px; object-fit:contain">
+</div>
+<p style="font-size:32px; line-height:1.4">r₁, r₂ e r₃ são índices <b>sorteados</b>, distintos entre si e de i — por isso NP ≥ 4.</p>
+<p style="font-size:32px; line-height:1.4"><b>F</b> é o fator de escala: controla o tamanho do passo (tipicamente entre 0,4 e 1).</p>
+<p style="font-size:32px; line-height:1.4">Direção e tamanho do passo vêm <b>da própria população</b>, não de uma distribuição fixa.</p>
+</div>
+<img src="/_blob/9cace760460f679b053c9cc2b2fde9e5" alt="Esquema da mutação: a seta azul liga x r3 a x r2 (vetor diferença) e a seta laranja, com metade do comprimento, parte de x r1 e chega ao vetor mutante v" style="width:700px; height:422px; object-fit:contain">
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Storn e Price (1997), Eq. 2</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">9</p>
+<aside>Este é o coração do método. Para cada alvo, sorteamos três outros vetores. A diferença entre dois deles, multiplicada por F, é somada ao terceiro, o vetor-base. No desenho, a seta azul é a diferença entre x r2 e x r3; a laranja é a mesma diferença multiplicada por F = 0,5, aplicada a partir de x r1. O ponto importante: a ED não tem uma distribuição de mutação fixa, como as estratégias evolutivas. O passo vem das diferenças entre os próprios indivíduos, então se ajusta sozinho à dispersão da população.</aside>
+</section>
