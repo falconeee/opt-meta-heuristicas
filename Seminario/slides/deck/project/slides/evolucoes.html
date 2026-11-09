@@ -1,0 +1,40 @@
+<section id="evolucoes" data-transition="fade" style="background:#EEF2F8; color:#3B4658; font-family:'IBM Plex Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:32px">
+<div style="display:flex; flex-direction:column; gap:12px">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Conclusões</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif; font-size:64px; font-weight:600; line-height:1.1; color:#13233F">Como a ED evoluiu desde 1997</h2>
+</div>
+<p style="font-size:32px; line-height:1.4">Um survey de 2025 reúne 113 trabalhos que melhoraram as quatro etapas do algoritmo.</p>
+<div style="display:flex; flex-direction:column">
+<div style="display:grid; grid-template-columns:307px 724px 1fr; gap:32px; padding:0px 0px 16px; border-bottom:2px solid #13233F">
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Etapa</p>
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">O que mudou</p>
+<p style="font-size:24px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#1C5CAB">Ganho alcançado</p>
+</div>
+<div style="display:grid; grid-template-columns:307px 724px 1fr; gap:32px; align-items:start; padding:18px 0px">
+<p style="font-size:32px; font-weight:600; color:#13233F">Inicialização</p>
+<p style="font-size:28px; line-height:1.4">População inicial mais bem espalhada: mapas caóticos, pontos opostos e agrupamento</p>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:28px; line-height:1.4">Converge mais rápido na maioria das propostas</p></div>
+</div>
+<div style="display:grid; grid-template-columns:307px 724px 1fr; gap:32px; align-items:start; padding:18px 0px; border-top:1px solid #C9D3E0">
+<p style="font-size:32px; font-weight:600; color:#13233F">Mutação</p>
+<p style="font-size:28px; line-height:1.4">F e CR aprendidos durante a execução; guia sorteado entre os melhores (JADE, SHADE)</p>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:28px; line-height:1.4">Fim da tentativa e erro; o L-SHADE venceu a CEC 2014</p></div>
+</div>
+<div style="display:grid; grid-template-columns:307px 724px 1fr; gap:32px; align-items:start; padding:18px 0px; border-top:1px solid #C9D3E0">
+<p style="font-size:32px; font-weight:600; color:#13233F">Cruzamento</p>
+<p style="font-size:28px; line-height:1.4">CR que muda ao longo da busca e troca de coordenadas em eixos girados (autovetores)</p>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:28px; line-height:1.4">Lida melhor com variáveis que dependem umas das outras</p></div>
+</div>
+<div style="display:grid; grid-template-columns:307px 724px 1fr; gap:32px; align-items:start; padding:18px 0px; border-top:1px solid #C9D3E0">
+<p style="font-size:32px; font-weight:600; color:#13233F">Seleção</p>
+<p style="font-size:28px; line-height:1.4">Além do um contra um: seleção elitista, guiada pela diversidade ou que reaproveita descartados</p>
+<div style="display:flex; gap:16px; align-items:start"><x-icon name="Check" style="color:#1C5CAB; width:36px; height:36px"></x-icon><p style="flex:1; font-size:28px; line-height:1.4">Menos estagnação e convergência mais rápida</p></div>
+</div>
+</div>
+<div style="background:#FAFAF7; border-radius:16px; padding:20px 36px">
+<p style="font-size:28px; line-height:1.4"><b style="color:#1C5CAB">Tendência:</b> inicialização e seleção são só 20% dos trabalhos, e são a aposta para o futuro.</p>
+</div>
+<p style="position:absolute; left:128px; bottom:64px; width:1200px; font-size:24px; color:#5E6878">Fontes: Reyes-Davila et al. (2025); Tanabe e Fukunaga (2014)</p>
+<p style="position:absolute; right:128px; bottom:64px; width:200px; font-size:24px; text-align:right; color:#5E6878">23</p>
+<aside>Depois de 1997, a ED virou um dos algoritmos mais estudados da computação evolutiva, e quase todo trabalho novo mexe em uma das quatro etapas que vimos. O survey de Reyes-Davila e colegas, de 2025, organiza 113 desses trabalhos por etapa. Na inicialização, a ideia é começar com uma população mais bem espalhada pelo domínio; isso acelera a convergência na maioria das propostas. Na mutação está a evolução mais conhecida, que responde à primeira limitação do slide anterior: em vez de F e CR fixos, o jDE, o JADE e o SHADE aprendem esses valores com as tentativas que deram certo, e usam como guia um indivíduo sorteado entre os melhores. O L-SHADE, que também diminui a população ao longo da execução, venceu a competição do IEEE CEC 2014. No cruzamento, o CR passa a mudar durante a busca, e há versões que trocam coordenadas em eixos girados, o que ajuda quando as variáveis dependem umas das outras. Na seleção, que ficou anos sem mudar, surgem versões elitistas e versões que olham para a diversidade da população, para evitar a estagnação. A conclusão do survey: mutação e cruzamento já foram muito explorados; inicialização e seleção somam só cerca de 20% dos trabalhos e são o caminho sugerido para pesquisas futuras.</aside>
+</section>

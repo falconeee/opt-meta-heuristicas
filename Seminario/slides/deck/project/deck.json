@@ -9,7 +9,7 @@
     "ciclo", "representacao", "mutacao", "cruzamento", "selecao", "pseudocodigo",
     "variantes", "parametros", "div-int", "exemplo",
     "rastrigin", "implementacao", "populacao", "animacao", "resultados",
-    "pot-lim", "mensagem", "referencias", "perguntas"
+    "pot-lim", "evolucoes", "mensagem", "referencias", "perguntas"
   ],
   "sections": {
     "abertura": {"description": "Título e roteiro do seminário", "start": "capa"},
